@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Md" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Monis" required />
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth:</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required />
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Nepal">Nepal</option>
+            <option value="China">China</option>
+            <option value="Bhutan">Bhutan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Gender:</label><br />
+          <input type="checkbox" id="male" name="gender" value="Male" /> Male
+          <input type="checkbox" id="female" name="gender" value="Female" />
+          Female
+          <input type="checkbox" id="other" name="gender" value="Other" /> Other
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession:</label>
+          <input type="text" id="profession" name="profession" placeholder="Software Developer" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number:</label>
+          <input type="tel" id="mobile-number" name="mobile-number" placeholder="1234567890" required />
+        </div>
+        <div class="form-group">
+          <button type="button" id="submit-button" class="button submit-button">Submit</button>
+          <button type="button" id="reset-button" class="button reset-button">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content" id="popup-content">
+        <h2>Survey Submission</h2>
+        <p id="submitted-data"></p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
